@@ -11,7 +11,7 @@ int main(){
     ios :: sync_with_stdio(false);
     cin.tie(0);
 
-    vector<int> v = {6, 7, 8, 9, 1, 2, 3;
+    vector<int> v = {6, 7, 8, 9, 1, 2, 3};
     vector<int> v = {9, 7, 5, 3 , 2};
     int l, r, mid;
     l = 0;

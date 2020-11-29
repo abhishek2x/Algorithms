@@ -1,3 +1,7 @@
 {
-    "workbench.panel.defaultLocation": "right"
+    "workbench.panel.defaultLocation": "right",
+    "files.associations": {
+        "*.js": "javascriptreact",
+        "random": "cpp"
+    }
 }
