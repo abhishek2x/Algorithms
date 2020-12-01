@@ -17,7 +17,7 @@ int main(){
     r = v.size()-1;
 
     while(l<=r){
-        mid = (r+l)/2;
+        mid = l + (r-l)/2;
         // cout << l << " " << r << " " << v[mid] << " " << x << "\n";
         if(v[mid] == x){
             cout << x << " found at " << mid << "\n";
