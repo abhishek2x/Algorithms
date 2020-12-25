@@ -62,12 +62,12 @@ int main(){
     int us_coins[] = {1, 7, 10};
     int indian_coins[] = {1, 2, 5, 10, 50};
 
-    cout << "Recursive " << endl;
+    cout << "Recursion " << endl;
 
     cout << coinsNeeded(us_coins, amount, 3) << endl; 
     cout << coinsNeeded(indian_coins, paise, 5) << endl;
 
-    cout << "Recursive Using DP" << endl;
+    cout << "Recursion Using DP" << endl;
 
     cout << coinsNeededDP(us_coins, amount, 3) << endl; 
     cout << coinsNeededDP(indian_coins, 39, 5) << endl;
