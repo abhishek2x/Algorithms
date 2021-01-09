@@ -28,7 +28,6 @@ void BubbleSort(vector<int> v, int n) {
   BubbleSort(v, n-1);
 }
 
-
 int main(){
 
   ios :: sync_with_stdio(false);

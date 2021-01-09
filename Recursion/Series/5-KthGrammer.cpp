@@ -35,7 +35,7 @@ int main(){
   ios :: sync_with_stdio(false);
   cin.tie(0);
 
-  int N=4, K=5;
+  int N=3, K=4;
   cout << NthGrammer(N, K);
 
   return 0;
