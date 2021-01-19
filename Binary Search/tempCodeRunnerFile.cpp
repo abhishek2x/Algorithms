@@ -1,1 +1,1 @@
-<
+getSequenceSum
