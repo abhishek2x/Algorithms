@@ -1,0 +1,11 @@
+String matching algorithms: 
+
+Naïve string matching algorithms, 
+
+KMP algorithm, 
+
+Rabin-Karp algorithm, 
+
+suffix trees, 
+
+Exact string matching algorithm using suffix trees.
