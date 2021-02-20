@@ -22,7 +22,7 @@ int Kanping(vector<int>& values, vector<int>& weights, int n, int W) {
     return t[n][W] = Kanping(values, weights, n-1, W);
   } else {
     // include or not include
-    return t[n][W] = max( values[n-1] + Kanping(values, weights, n-1, W-weights[n-1]), Kanping(values, weights, n-1, W));
+    return t[n][W] = max( weights[n-1] + Kanping(values, weights, n-1, W-weights[n-1]), Kanping(values, weights, n-1, W));
   }
 }
 
