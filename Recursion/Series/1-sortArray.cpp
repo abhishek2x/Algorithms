@@ -19,11 +19,11 @@ void BubbleSort(vector<int> v, int n) {
     return;
   }
 
-  // at the end of this loop, 
+  // at the end of this loop,
   // largest will reach the end position.
   for (int i = 0; i < n-1; i++)
     if(v[i] > v[i+1])
-      swap(v[i], v[i+1]);      
+      swap(v[i], v[i+1]);
       
   BubbleSort(v, n-1);
 }
