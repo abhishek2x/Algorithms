@@ -20,11 +20,7 @@ int NthGrammer(int n, int k){
     return 0;
   }
   if(k%2 == 0) {
-    if(NthGrammer(n-1, k/2) == 0){
-      return 1;
-    } else {
-      return 0;
-    }
+    return !NthGrammer(n-1, k/2);
   } else {
     return NthGrammer(n-1, (k+1)/2);
   }
@@ -35,7 +31,7 @@ int main(){
   ios :: sync_with_stdio(false);
   cin.tie(0);
 
-  int N=3, K=4;
+  int N=4, K=5;
   cout << NthGrammer(N, K);
 
   return 0;
