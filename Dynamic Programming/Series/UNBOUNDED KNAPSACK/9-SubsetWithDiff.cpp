@@ -10,7 +10,7 @@ int dp[1001][1001];
 
 bool SubsetSum(vector<int>& arr, int n, int sum) {
   if(sum == 0) return true;
-  if(n == 0) return false;
+  if(n == 0) return false; 
 
   if(dp[n-1][sum] != -1) return dp[n-1][sum];
   if(arr[n-1] > sum) return dp[n-1][sum] = SubsetSum(arr, n-1, sum);
