@@ -18,14 +18,13 @@ int SubsetSum(vector<int>& arr, int n, int sum) {
   return dp[n-1][sum] = SubsetSum(arr, n-1, sum-arr[n-1]) + SubsetSum(arr, n-1, sum);
 }
 
-int SubsetWithGivenDiff(vector<int>& arr, int n, int diff) {
+int TargetSum(vector<int>& arr, int n, int diff) {
   ll sum=0;
   for(auto i: arr) sum += i;
 
   int s1 = (sum+diff)/2;
-  cout << SubsetSum(arr, n, s1);
+  return SubsetSum(arr, n, s1);
 
-  return ans;
 }
 
 int main(){
@@ -37,7 +36,6 @@ int main(){
   vector<int> arr = {1, 2, 7};
   int diff = 4;
 
-  cout << SubsetWithGivenDiff(arr, 3, diff);
- 
+  cout << TargetSum(arr, 3, diff);
   return 0;
 }
