@@ -16,7 +16,7 @@ int main(){
 
   string X = "AXY";
   string Y = "ADSXFY";
-  // answer = "abd"
+  // answer = "true"
 
   int m = X.length();
   int n = Y.length();
