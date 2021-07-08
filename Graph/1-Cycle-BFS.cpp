@@ -9,7 +9,7 @@ using namespace std;
 class Solution {
 
 public:
-    bool checkForCycle(int s, int V, vector<int> adj[], vector<int>& visited) {
+    bool checkForCycle(int s, vector<int> adj[], vector<int>& visited) {
         // queue<node, parent>
         queue<pair<int, int>> q;
 
@@ -25,7 +25,7 @@ public:
             for(auto it: adj[node]) {
                 if(!visited[it]) {
                     visited[it] = true;
-                    checkForCycle(it, V, adj, visited);
+                    q.push({it, node});
                 }
                 else if(it != parent) {
                     // cycle found
@@ -43,7 +43,7 @@ public:
         // Loop is used to check cycle in each component
         for(int i=0; i<V; i++) {
             if(!visited[i]) 
-                if(checkForCycle(i, V, adj, visited)) return true;
+                if(checkForCycle(i, adj, visited)) return true;
         }
         return false;
 	}
