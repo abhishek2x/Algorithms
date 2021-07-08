@@ -20,10 +20,9 @@ int main(){
     int n = 4;
     int key = 17;
 
-    int l=0, h=n-1, mid;
-    while(l<n && h<n && h>=0 &&l>=0){
+    int l=0, h=n-1;
+    while(l<n && h<n && h>=0 && l>=0){
         // cout << l << " -- " << h << "\n";
-        mid = l + (h-l)/2;
         if(a[l][h] == key){
             cout << l << " " << h;
             break;
