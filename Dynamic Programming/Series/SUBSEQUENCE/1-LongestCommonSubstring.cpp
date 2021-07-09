@@ -16,8 +16,8 @@ int main(){
   memset(dp, -1, sizeof(dp));
 
 
-  string X = "abchidfa";
-  string Y = "abcidpkkka";
+  string X = "abcd";
+  string Y = "abpqd";
   // answer = "abcida", i.e, 3
 
   int m = X.length();
