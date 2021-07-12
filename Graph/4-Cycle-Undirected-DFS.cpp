@@ -7,7 +7,7 @@ bool isCycleDFS(int src, vector<int> adj[], vector<int>& visited) {
 	visited[src] = 1;
 
 	for(auto it: adj[src]) {
-		if(!visited) {
+		if(!visited[it]) {
 			if(isCycleDFS(it, adj, visited)) return true;
 		}
 		else if(it != src) return true;
