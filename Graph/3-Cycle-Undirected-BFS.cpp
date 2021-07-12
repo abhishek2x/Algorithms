@@ -4,20 +4,21 @@
 using namespace std;
 
 bool isCycleBFS(int node, vector<int> adj[], vector<int> &visited) {
-    queue<int> q;
-    q.push(node);
+    queue<pair<int, int>> q;
+    q.push({node, -1});
     visited[node] = true;
 
     while(!q.empty()) {
-        int temp = q.front();
+        int temp = q.front().first;
+        int parent = q.front().second;
         q.pop();
         
         for(auto it: adj[temp]) {
             if(!visited[it]) {
-                q.push(it);
+                q.push({it, temp});
                 visited[it] = 1;
             }
-            else if(temp != it) {
+            else if(it != parent) {
                 return true;
             }
         }
