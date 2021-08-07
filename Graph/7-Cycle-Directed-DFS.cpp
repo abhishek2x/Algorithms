@@ -1,5 +1,4 @@
 // check cycle in directed graph using dfs
-// 
 
 #include<bits/stdc++.h>
 using namespace std;

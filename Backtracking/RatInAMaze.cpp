@@ -25,7 +25,7 @@ bool solveMaze(int x, int y, int m[D][D], int n){
             int next_y = y + y_dir[i];
 
             if(ifPossible(next_x, next_y, m, n)){
-                m[next_x][next_y] = 5;
+                m[next_x][next_y] = 5;  // ->demo no. 5
 
                 // Recursion
                 if(solveMaze(next_x, next_y, m, n))
@@ -68,10 +68,10 @@ int main(){
 
     int n = 4;
 
-    int maze[D][D] = { { 1, 0, 0, 0 }, 
+    int maze[D][D] = { { 1, 1, 1, 0 }, 
+                       { 1, 1, 1, 1 }, 
                        { 1, 1, 0, 1 }, 
-                       { 0, 1, 0, 0 }, 
-                       { 1, 1, 1, 1 } }; 
+                       { 0, 0, 0, 1 } }; 
 
     cout << "Maze before Solving \n\n";
     printMaze(maze, n);
