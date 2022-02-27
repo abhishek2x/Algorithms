@@ -23,7 +23,7 @@ int main(){
     ios :: sync_with_stdio(false);
     cin.tie(0);
 
-    vector<int> v = {6, 7, 8, 9, 1, 2, 3};
+    vector<int> v = {5, 6, 7, 8, 9, 1, 2, 3};
     int l, r, mid, x=7;
     l = 0;
     r = v.size()-1;
